@@ -1,3 +1,3 @@
 module.exports = {
-   "appHost": "http://localhost:3003"
+   "appHost": "http://localhost:8080"
 }

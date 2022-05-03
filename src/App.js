@@ -6,16 +6,13 @@ import './App.css'
 import "leaflet/dist/leaflet.css";
 
 import Maps from './pages/Maps'
-import { DataProvider } from './contexts/Data'
 
 const App = () => {
   return (
     <BrowserRouter>
-      <DataProvider>
-        <Routes>
-          <Route exact path="/" element ={<Maps/>}/>
-        </Routes>
-      </DataProvider>
+      <Routes>
+        <Route exact path="/" element ={<Maps/>}/>
+      </Routes>
     </BrowserRouter>
   )
 }
