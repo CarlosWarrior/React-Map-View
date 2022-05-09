@@ -10,9 +10,9 @@ export const appClient = (t) => {
 
 export const api = {
 	getStaticFiles: (params, callback) => {
-		appClient(getToken()).get('/data/static', {params})
+		appClient(getToken()).get('/data', {params})
 			.then(r => callback(r.data))
-			.catch(e => console.log("Error on /data/static:", e))
+			.catch(e => console.log("Error on /data:", e))
 	},
 	getLastUnits: (params, callback) => {
 		appClient(getToken()).get('/data/db', {params})

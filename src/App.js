@@ -5,15 +5,19 @@ import logo from './logo.svg'
 import './App.css'
 import "leaflet/dist/leaflet.css";
 
+import Geoparser from './pages/Maps/geoparser'
+
 import Maps from './pages/Maps'
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element ={<Maps/>}/>
-      </Routes>
-    </BrowserRouter>
+    <Geoparser.Provider>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element ={<Maps/>}/>
+        </Routes>
+      </BrowserRouter>
+    </Geoparser.Provider>
   )
 }
 
