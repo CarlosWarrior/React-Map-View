@@ -6,4 +6,4 @@ It requires a connection to a geo-json server which parses the data from the sou
 
 Here is a [simple geoprocessor server](https://github.com/CarlosWarrior/python-geoprocessor-server)
 
-This implementation is based on a context which handles the mutation of each layer independently of their features thanks to [Leaflet :smiling_face_with_three_hearts:](https://leafletjs.com/).
+This implementation is based on a context which handles the mutation of each feature independently of their layer thanks to [Leaflet :smiling_face_with_three_hearts:](https://leafletjs.com/).
